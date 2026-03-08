@@ -1,0 +1,49 @@
+sudo apt update
+
+sudo apt upgrade -y
+
+sudo apt install apache2 -y
+
+sudo systemctl start apache2
+
+sudo systemctl enable apache2
+
+sudo systemctl status apache2
+
+sudo ufw allow 'Apache'
+
+
+sudo ufw status
+
+sudo ufw enable
+
+sudo ufw status
+
+#check localhost
+
+sudo rm /var/www/html/index.html
+
+sudo nano /var/www/html/index.html
+
+code:-
+<html>
+<head>
+<title>welcome to ubantu</title>
+</head>
+<body>
+<h1>okar</h1>
+<p>hiii</p>
+</body>
+</html>  
+
+sudo systemctl start apache2
+
+sudo ufw allow 80
+
+sudo ufw allow apache 
+
+
+
+
+
+
