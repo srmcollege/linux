@@ -1,0 +1,44 @@
+#Openstack practical commands
+
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo -i  
+
+echo “openstack  ALL=(ALL) NOPASSWD:ALL”  >>/etc/sudoers
+ 
+exit
+
+sudo apt-get install git
+
+git clone https://git.openstack.org/openstack-dev/devstack
+
+sudo apt-get install –reinstall ca-certificates
+
+cd devstack
+
+cd samples   
+
+cp local.conf  ../
+
+cd ..
+
+sudo apt install gedit
+
+gedit local.conf
+
+
+
+Now change the password on the line 28,29,30  
+Also set the host ip on line 40 
+After that save the file and close it.
+
+
+./stack.sh
+
+
+After successful installation, open web browser, 
+give IP address, Enter Login details of admin…Openstack
+Dashboard will be available.
