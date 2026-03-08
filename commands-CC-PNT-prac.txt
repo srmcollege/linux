@@ -1,0 +1,36 @@
+Cloud Computing Prac 5
+
+------------------------------------
+REQUIRED SOFTWARE/Files:
+
+vm ware
+windows 7 iso file 
+ununtu iso file 
+=====================================
+
+command : 
+
+=====================================
+
+sudo grep -c svm\|vmx /proc/cpuinfo
+
+cat /proc/cpuinfo 
+
+sudo apt update
+
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
+sudo add user srmcs
+
+sudo adduser srmcs libvirt
+
+sudo adduser srmcs kvm
+
+virsh list --all
+
+systemctl status libvirtd
+
+sudo usermod -aG sudo srmcs
+
+sudo apt install virt-manager
+
